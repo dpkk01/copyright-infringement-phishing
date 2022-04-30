@@ -1,0 +1,65 @@
+body{
+  height: 100vh;
+  text-align: center;
+}
+  /*Trigger Button*/
+.login-trigger {
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(to bottom right, #B05574, #F87E7B);
+  padding: 15px 30px;
+  border-radius: 30px;
+  position: relative; 
+  top: 50%;
+}
+
+/*Modal*/
+h4 {
+  font-weight: bold;
+  color: black;
+}
+.close {
+  color: #fff;
+  transform: scale(1.2)
+}
+.modal-content {
+  font-weight: bold;
+  background: white;
+}
+.form-control {
+  box-shadow: none;
+  margin: 5px;
+}
+.form-control:hover, .form-control:focus {
+  box-shadow: none;
+  border-color: #fff;
+  font-weight: normal;
+}
+.username, .password {
+  width: 100%;
+	background: #fafafa;
+	border: 1px solid #efefef;
+	font-size: 12px;
+	border-radius: 3px;
+	color: #262626;
+	padding: 10px;
+  font-weight: normal;
+}
+.form-control::-webkit-input-placeholder {
+  color: grey;
+}
+.form-control:focus::-webkit-input-placeholder {
+  font-weight: normal;
+  color: white;
+}
+.login {
+  margin: 10px 0;
+	background-color: #3897f0;
+  border: 1px solid #3897f0;
+  border-radius: 4px;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  color: white;
+  font-weight: normal;
+}

